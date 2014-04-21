@@ -1,5 +1,8 @@
 require 'oauth/controllers/consumer_controller'
 class OauthConsumersController < ApplicationController
+
+  alias :login_required :authenticate_user!
+
   include Oauth::Controllers::ConsumerController
   # Replace this with the equivalent for your authentication framework
   # Eg. for devise
