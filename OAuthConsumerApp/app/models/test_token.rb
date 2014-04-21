@@ -1,6 +1,6 @@
 class TestToken < ConsumerToken
   TEST_SETTINGS = {
-    :site => "http://devbox:3000",
+    :site => "http://lcub-dev-adam:3000",
     :request_token_path => "/oauth/request_token",
     :access_token_path => "/oauth/access_token",
     :authorize_path => "/oauth/authorize"

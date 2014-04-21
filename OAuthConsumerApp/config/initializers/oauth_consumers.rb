@@ -64,8 +64,8 @@
 #
 OAUTH_CREDENTIALS={
   :test => {
-    :key =>  "Oxr4dcJ0m57cNZ3w9gyfdVfAIAtc2waQSA9ZqzZd",
-    :secret => "78i9Gn0hEEb66cFj21GDVgDkRud27IhOugIaPMGj",
+    :key =>  "JLt0g3TERtpfau5dN1CLRwU5IUPnhVlPbikKpucj",
+    :secret => "8hfFMn4vjuxdC7upWqtywejSBobb8QMbGDWvAiL6",
     :expose => true
   }
 } unless defined? OAUTH_CREDENTIALS
