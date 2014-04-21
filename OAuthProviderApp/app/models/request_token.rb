@@ -1,5 +1,7 @@
 class RequestToken < OauthToken
 
+  attr_accessible :callback_url, :client_application
+
   attr_accessor :provided_oauth_verifier
 
   def authorize!(user)
