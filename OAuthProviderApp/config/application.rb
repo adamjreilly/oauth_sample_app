@@ -1,5 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
+require 'oauth/rack/oauth_filter'
+
 require 'rails/all'
 
 if defined?(Bundler)
@@ -58,5 +60,7 @@ module OAuthProviderApp
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.middleware.use OAuth::Rack::OAuthFilter
   end
 end
