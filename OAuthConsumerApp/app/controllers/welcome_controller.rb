@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
 
       if @consumer_tokens.first
         @token = @consumer_tokens.first.client
-        render inline @token.get("/api/v1/show").body
+        render inline: @token.get("/api/v1/show").body
       else
         redirect_to '/oauth_consumers/test'
       end
