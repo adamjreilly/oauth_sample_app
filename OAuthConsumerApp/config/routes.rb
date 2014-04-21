@@ -1,4 +1,12 @@
 OAuthConsumerApp::Application.routes.draw do
+  resources :oauth_consumers do
+    member do
+      get :callback
+      get :callback2
+      match 'client/*endpoint' => 'oauth_consumers#client', :via => [:get, :post, :put, :delete]
+    end
+  end
+
   devise_for :users
 
   # The priority is based upon order of creation:
