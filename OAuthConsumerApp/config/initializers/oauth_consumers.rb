@@ -63,6 +63,11 @@
 # }
 #
 OAUTH_CREDENTIALS={
+  :test => {
+    :key =>  "Oxr4dcJ0m57cNZ3w9gyfdVfAIAtc2waQSA9ZqzZd",
+    :secret => "78i9Gn0hEEb66cFj21GDVgDkRud27IhOugIaPMGj",
+    :expose => true
+  }
 } unless defined? OAUTH_CREDENTIALS
 
 load 'oauth/models/consumers/service_loader.rb'
