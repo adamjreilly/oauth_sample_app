@@ -1,4 +1,6 @@
 OAuthConsumerApp::Application.routes.draw do
+  get "welcome/index"
+
   resources :oauth_consumers do
     member do
       get :callback
