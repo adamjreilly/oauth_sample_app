@@ -1,7 +1,8 @@
 OAuthConsumerApp::Application.routes.draw do
+  root :to => "welcome#index"
+
   get "welcome/index"
 
-  root :to => "welcome#index"
 
   resources :oauth_consumers do
     member do
