@@ -1,4 +1,7 @@
 OAuthProviderApp::Application.routes.draw do
+
+  root :to => 'oauth_clients#index'
+
   resources :oauth_clients
 
   match '/oauth/test_request',  :to => 'oauth#test_request',  :as => :test_request
