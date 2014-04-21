@@ -1,5 +1,7 @@
 OAuthProviderApp::Application.routes.draw do
 
+  devise_for :users
+
   root :to => 'oauth_clients#index'
 
   resources :oauth_clients
